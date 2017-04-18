@@ -24,7 +24,7 @@ public class HomePage{
 
     public PhonePage navigateToPhonePage() throws Exception{
         WebElement element = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.elementToBeClickable(SEARCH_SMANDPHONE));
+       .until(ExpectedConditions.elementToBeClickable(SEARCH_SMANDPHONE));
         try {
             String title=driver.getTitle();
             element.click();
@@ -37,21 +37,5 @@ public class HomePage{
             throw(e);
         }
         return new PhonePage(driver);
-    }
-    public AnyPage navigateToPage(By path) throws Exception{
-        WebElement element = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.elementToBeClickable(path));
-        try {
-            String title=driver.getTitle();
-            element.click();
-            Thread.sleep(1000);
-            if (driver.getTitle().equals(title)){element.click();}
-            Log.info(element.toString()+ "link is found on the Main Page");
-        }
-        catch (Exception e){
-            Log.error(element.toString()+ "link is NOT found on the Main Page");
-            throw(e);
-        }
-        return new AnyPage(driver);
     }
 }
