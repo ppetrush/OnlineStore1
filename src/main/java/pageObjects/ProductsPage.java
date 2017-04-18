@@ -22,7 +22,9 @@ public class ProductsPage {
     public void searchForTopSells()  throws Exception{
         List<WebElement> list_desc;
         List<WebElement> list_price;
+
         try {
+            Thread.sleep(1000);
             list_desc = driver.findElements(TOP_SELLS_DESCRIP);
             list_price = driver.findElements(TOP_SELLS_PRICE);
                 Log.info("There are " + list_desc.size() + " topsells products, and " + list_price.size() + " prices on the -  on the - " + driver.getCurrentUrl());
