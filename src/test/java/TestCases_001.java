@@ -42,39 +42,39 @@ public class TestCases_001{
         homePage = new HomePage(driver).open();
     }
 
-//    @Test (priority = 1)
-//    public void searchForTopSellsProducts() throws Exception {
-//        Log.info("$$$$$$$$$$$$$$$$$$$$$               searchForTopSellsProducts        $$$$$$$$$$$$$$$$$$$$$$$$$");
-//        PhonePage phonePage = homePage.navigateToPhonePage();
-//
-//        SmPhonePage smPhonePage = phonePage.navigateToSmartPhonePage();
-//
-//        ProductsPage productsPage1 = smPhonePage.navigateToProductsPage(1);
-//        productsPage1.searchForTopSells();
-//
-//        ProductsPage productsPage2 = smPhonePage.navigateToProductsPage(2);
-//        productsPage2.searchForTopSells();
-//
-//        ProductsPage productsPage3 = smPhonePage.navigateToProductsPage(3);
-//        productsPage3.searchForTopSells();
-//    }
-//
-//    @Test(priority = 2)
-//    public void searchForActionsProducts() throws Exception {
-//        Log.info("$$$$$$$$$$$$$$$$$$$$$               searchForActionsProducts        $$$$$$$$$$$$$$$$$$$$$$$$$");
-//        PhonePage phonePage = homePage.navigateToPhonePage();
-//
-//        SmPhonePage smPhonePage = phonePage.navigateToSmartPhonePage();
-//
-//        ProductsPage productsPage1 = smPhonePage.navigateToProductsPage(1);
-//        productsPage1.searchForActions();
-//
-//        ProductsPage productsPage2 = smPhonePage.navigateToProductsPage(2);
-//        productsPage2.searchForActions();
-//
-//        ProductsPage productsPage3 = smPhonePage.navigateToProductsPage(3);
-//        productsPage3.searchForActions();
-//    }
+    @Test (priority = 1)
+    public void searchForTopSellsProducts1() throws Exception {
+        Log.info("$$$$$$$$$$$$$$$$$$$$$               searchForTopSellsProducts        $$$$$$$$$$$$$$$$$$$$$$$$$");
+        PhonePage phonePage = homePage.navigateToPhonePage();
+
+        SmPhonePage smPhonePage = phonePage.navigateToSmartPhonePage();
+
+        ProductsPage productsPage1 = smPhonePage.navigateToProductsPage(1);
+        productsPage1.searchForTopSells();
+
+        ProductsPage productsPage2 = smPhonePage.navigateToProductsPage(2);
+        productsPage2.searchForTopSells();
+
+        ProductsPage productsPage3 = smPhonePage.navigateToProductsPage(3);
+        productsPage3.searchForTopSells();
+    }
+
+    @Test(priority = 2)
+    public void searchForActionsProducts() throws Exception {
+        Log.info("$$$$$$$$$$$$$$$$$$$$$               searchForActionsProducts        $$$$$$$$$$$$$$$$$$$$$$$$$");
+        PhonePage phonePage = homePage.navigateToPhonePage();
+
+        SmPhonePage smPhonePage = phonePage.navigateToSmartPhonePage();
+
+        ProductsPage productsPage1 = smPhonePage.navigateToProductsPage(1);
+        productsPage1.searchForActions();
+
+        ProductsPage productsPage2 = smPhonePage.navigateToProductsPage(2);
+        productsPage2.searchForActions();
+
+        ProductsPage productsPage3 = smPhonePage.navigateToProductsPage(3);
+        productsPage3.searchForActions();
+    }
     @Test(priority = 2)
     public void searchForTopSellsProducts() throws Exception {
         Log.info("$$$$$$$$$$$$$$$$$$$$$               NEW        $$$$$$$$$$$$$$$$$$$$$$$$$");
