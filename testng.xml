@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test.java.TestCases_001">
+    <test name="Find top-products" preserve-order="true">
+        <classes>
+            <class name="TestCases_001">
+                <methods>
+                    <include name="searchForTopSellsProducts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

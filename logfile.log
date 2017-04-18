@@ -1,0 +1,12 @@
+2017-04-18 16:35:29,391 INFO  [Log] **************************************************************************************** 
+2017-04-18 16:35:29,392 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$              TestCases_001@af6cff       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-18 16:35:29,392 INFO  [Log] **************************************************************************************** 
+2017-04-18 16:35:39,056 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$               NEW        $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-18 16:35:41,496 INFO  [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //li[@id='3361']/a[@name='fat_menu_link']]link is found on the Main Page 
+2017-04-18 16:35:44,123 INFO  [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //ul[@id='menu_categories_left']/li[1]/h4/a]link is found on the Main Page 
+2017-04-18 16:35:52,553 INFO  [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //ul[@id='menu_categories_left']/li[1]/div/a[1]]link is found on the Main Page 
+2017-04-18 16:35:52,698 INFO  [Log] There are 1 actions products, and 1 prices on the - http://rozetka.com.ua/mobile-phones/c80003/preset=smartfon/ 
+2017-04-18 16:35:52,755 INFO  [Log] product#0 - Meizu M3 Note 16GB Silver (Международная версия) ====> price - 3 399?грн 
+2017-04-18 16:35:54,006 ERROR [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //li[@id='page2']/a]link is NOT found on the Main Page 
+2017-04-18 16:35:54,016 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX           --- END ---           XXXXXXXXXXXXXXXXXXXXXX 
+2017-04-18 16:35:54,016 INFO  [Log] X 
