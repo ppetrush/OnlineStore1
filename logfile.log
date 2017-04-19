@@ -1,12 +1,22 @@
-2017-04-18 16:35:29,391 INFO  [Log] **************************************************************************************** 
-2017-04-18 16:35:29,392 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$              TestCases_001@af6cff       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-18 16:35:29,392 INFO  [Log] **************************************************************************************** 
-2017-04-18 16:35:39,056 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$               NEW        $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2017-04-18 16:35:41,496 INFO  [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //li[@id='3361']/a[@name='fat_menu_link']]link is found on the Main Page 
-2017-04-18 16:35:44,123 INFO  [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //ul[@id='menu_categories_left']/li[1]/h4/a]link is found on the Main Page 
-2017-04-18 16:35:52,553 INFO  [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //ul[@id='menu_categories_left']/li[1]/div/a[1]]link is found on the Main Page 
-2017-04-18 16:35:52,698 INFO  [Log] There are 1 actions products, and 1 prices on the - http://rozetka.com.ua/mobile-phones/c80003/preset=smartfon/ 
-2017-04-18 16:35:52,755 INFO  [Log] product#0 - Meizu M3 Note 16GB Silver (Ìåæäóíàðîäíàÿ âåðñèÿ) ====> price - 3 399?ãðí 
-2017-04-18 16:35:54,006 ERROR [Log] [[ChromeDriver: chrome on XP (fa6c2661049c0242341e7950984fcb81)] -> xpath: //li[@id='page2']/a]link is NOT found on the Main Page 
-2017-04-18 16:35:54,016 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX           --- END ---           XXXXXXXXXXXXXXXXXXXXXX 
-2017-04-18 16:35:54,016 INFO  [Log] X 
+2017-04-19 15:48:00,427 INFO  [Log] Establish connection to DB -> SUCCESS 
+2017-04-19 15:48:00,429 INFO  [Log] Data erased in table - products 
+2017-04-19 15:48:00,430 INFO  [Log] ---------------------------------------------------------------------------------------- 
+2017-04-19 15:48:00,430 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$              TestCases_001@a9e816       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2017-04-19 15:48:00,430 INFO  [Log] ---------------------------------------------------------------------------------------- 
+2017-04-19 15:48:17,725 INFO  [Log] -------------------              searchForTopSellsProducts        ---------------------- 
+2017-04-19 15:48:19,074 INFO  [Log] "Phones & smartPhones" link is found on the Main Page 
+2017-04-19 15:48:22,359 INFO  [Log] "Phones" link is found on the Phone Page 
+2017-04-19 15:48:26,641 INFO  [Log] "SmartPhones-Page1" link is found on the Phone Page 
+2017-04-19 15:48:34,163 INFO  [Log] There are 1 topsells products, and 1 prices on the http://rozetka.com.ua/mobile-phones/c80003/preset=smartfon/ 
+2017-04-19 15:48:34,259 INFO  [Log] Establish connection to DB -> SUCCESS 
+2017-04-19 15:48:34,296 INFO  [Log] Data stored to DB 
+2017-04-19 15:48:34,607 INFO  [Log] "Page2" link is found on the Phone Page 
+2017-04-19 15:49:22,915 INFO  [Log] There are 0 topsells products, and 0 prices on the http://rozetka.com.ua/mobile-phones/c80003/page=2;preset=smartfon/ 
+2017-04-19 15:49:22,932 INFO  [Log] Establish connection to DB -> SUCCESS 
+2017-04-19 15:49:22,932 INFO  [Log] Data stored to DB 
+2017-04-19 15:49:23,105 ERROR [Log] Link is NOT found on the SmartPhones Page 
+2017-04-19 15:49:23,123 INFO  [Log] -----------------------           --- END ---       -------------------------- 
+2017-04-19 15:49:25,484 INFO  [Log] Load data from  DB to logfile 
+2017-04-19 15:49:25,484 INFO  [Log] Establish connection to DB -> SUCCESS 
+2017-04-19 15:49:25,486 INFO  [Log] topsells products on - page1 URL - (http://rozetka.com.ua/mobile-phones/c80003/preset=smartfon/) Name -Meizu M3 Note 16GB Silver (ÐœÐµÐ¶Ð´ÑƒÐ½Ð°Ñ€Ð¾Ð´Ð½Ð°Ñ Ð²ÐµÑ€ÑÐ¸Ñ) Price - 3 399â€‰Ð³Ñ€Ð½ 
+2017-04-19 15:49:25,486 INFO  [Log] Load data from DB -> SUCCESS 

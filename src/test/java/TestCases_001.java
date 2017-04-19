@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 public class TestCases_001{
@@ -18,8 +19,9 @@ public class TestCases_001{
 
 
     @BeforeClass(alwaysRun = true)
-    public void setUp() {
+    public void setUp()  throws Exception{
         DOMConfigurator.configure("log4j.xml");
+        appModules.JavaToMySql.clearTable("products");
         sTestCaseName = this.toString();
         Log.startTestCase(sTestCaseName);
         System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
@@ -33,26 +35,29 @@ public class TestCases_001{
         homePage = new HomePage(driver).open();
     }
 
-    @Test (priority = 1)
+    @Test (priority = 1)//search  for topsells product
     public void searchForTopSellsProducts() throws Exception {
-        Log.info("$$$$$$$$$$$$$$$$$$$$$               searchForTopSellsProducts        $$$$$$$$$$$$$$$$$$$$$$$$$");
+        Log.info("-------------------              searchForTopSellsProducts        ----------------------");
         PhonePage phonePage = homePage.navigateToPhonePage();
 
         SmPhonePage smPhonePage = phonePage.navigateToSmartPhonePage();
 
-        ProductsPage productsPage1 = smPhonePage.navigateToProductsPage(1);
-        productsPage1.searchForTopSells();
+        ProductsPage productsPage1 = smPhonePage.navigateToProductsPage("Page1");
+        appModules.JavaToMySql.storeToDb(productsPage1.searchForTopSells(),"topsells","page1",productsPage1.getUrl());
 
-        ProductsPage productsPage2 = smPhonePage.navigateToProductsPage(2);
-        productsPage2.searchForTopSells();
 
-        ProductsPage productsPage3 = smPhonePage.navigateToProductsPage(3);
-        productsPage3.searchForTopSells();
+        ProductsPage productsPage2 = smPhonePage.navigateToProductsPage("Page2");
+        appModules.JavaToMySql.storeToDb(productsPage2.searchForTopSells(),"topsells","page2",productsPage2.getUrl());
+
+        ProductsPage productsPage3 = smPhonePage.navigateToProductsPage("Page3");
+        appModules.JavaToMySql.storeToDb(productsPage3.searchForTopSells(),"topsells","page3",productsPage3.getUrl());
     }
+
   @AfterClass
-  public void afterMethod() {
-	    Log.endTestCase(sTestCaseName);
+  public void afterMethod() throws SQLException {
+	    Log.endTestCase();
 	    driver.close();
+        appModules.JavaToMySql.loadDataToLog();
   		}
 
 }

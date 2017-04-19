@@ -15,6 +15,8 @@ public class PhonePage{
         this.driver = driver;
     }
 
+
+
     public SmPhonePage navigateToSmartPhonePage()  throws Exception{
         WebElement element = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.elementToBeClickable(SEARCH_PHONE));
